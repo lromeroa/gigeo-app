@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIGEO App</title>
+    <meta name="Author" content="Leslie Romero">
+    <meta name="Description" content="Gigeo app">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation row">
+            <div class="navigation__logo">
+                <h1>GIGEO</h1>
+                <h6>ART</h6>
+            </div>
+            <div class="collapsible col-xs-12">
+                <input type="checkbox" id="menu">
+                <label for="menu"><i class="fas fa-bars fa-3x"></i></label>
+                <div class="navigation__container">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#"><i class="fas fa-search fa-2x"></i></a></li>
+                        <li class="navigation__item"><a href="#"><i class="fas fa-video fa-2x"></i></a></li>
+                        <li class="navigation__item"><a href="#"><i class="fas fa-plus fa-2x"></i></a></li>
+                        <li class="navigation__item"><a href="#"><i class="far fa-bell fa-2x"></i></a></li>
+                        <li class="navigation__item d-none d-md-block"><a href="#"><i class="fas fa-bars fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="main__image col-xs-12"></div>
+        <div class="main__container col-xs-12">
+            <div class="main__yuki">
+                <div class="main__photo">
+                    <img class="thumbnail" src="assets/img/profile-image.png" alt="Yuki">
+                </div>
+
+                <div class="main__name">
+                    <h2>Yuki Mukami</h2>
+                    <p>30.000 seguidores</p>
+                </div>
+            </div>
+
+            <div class="main__buttons d-none d-md-block">
+                <button class="button button--light-blue">Mensaje</button>
+                <button class="button button--red">Seguir</button>
+            </div>
+        </div>
+        <hr>
+    </main>
+
+    <section class="video">
+
+        <div class="video__container col-xs-12">
+            <div class="video__title col-xs-12">
+                <h3>Videos populares</h3>
+            </div>
+            <div class="video__card col-xs-12">
+                <img src="assets/img/image-1.png" alt="1">
+                <h4>Después de la vela - Yuki Mukami</h4>
+                <p>16k vistas - 1 semana atrás</p>
+            </div>
+            <div class="video__card col-xs-12">
+                <img src="assets/img/image-2.png" alt="2">
+                <h4>Far Away - Yuki Mukami</h4>
+                <p>100k vistas - 1 mes atrás</p>
+            </div>
+            <div class="video__card col-xs-12">
+                <img src="assets/img/image-3.png" alt="3">
+                <h4>City - Yuki Mukami</h4>
+                <p>20k vistas - 1 mes atrás</p>
+            </div>
+            <div class="video__card col-xs-12">
+                <img src="assets/img/image-4.png" alt="4">
+                <h4>A Yuki Tale - Yuki Mukami</h4>
+                <p>1m vistas - 1 año atrás</p>
+            </div>
+            <div class="video__card col-xs-12">
+                <img src="assets/img/image-5.png" alt="5">
+                <h4>Mapocho - Yuki Mukami</h4>
+                <p>100k vistas - 1 mes atrás</p>
+            </div>
+            <div class="video__card col-xs-12">
+                <img src="assets/img/image-6.png" alt="6">
+                <h4>Luky Days - Yuki Mukami</h4>
+                <p>40k vistas - 3 meses atrás</p>
+            </div>
+            <div class="video__card col-xs-12">
+                <img src="assets/img/image-7.png" alt="7">
+                <h4>30 days in My House - Yuki Mukami</h4>
+                <p>10k vistas - 4 meses atrás</p>
+            </div>
+            <div class="video__card col-xs-12">
+                <img src="assets/img/image-8.png" alt="8">
+                <h4>Santiago - Yuki Mukami</h4>
+                <p>40k vistas - 1 meses atrás</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jquery V.3.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-
+    q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper JS V.1.14.7 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS V.4.3.1 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

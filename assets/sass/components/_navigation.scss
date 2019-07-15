@@ -1,0 +1,129 @@
+.navigation {
+  padding: 1rem;
+
+  &__logo {
+    position: absolute;
+    margin-left: 2rem;
+    display: flex;
+    h1 {
+      font-family: $open-sans;
+      font-weight: $semi-bold;
+    }
+  }
+
+  &__container {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  &__list {
+    list-style: none;
+    display: inline-grid;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__item {
+    a {
+      display: block;
+      text-align: left;
+      text-decoration: none;
+      margin: 1rem;
+      font-weight: $regular;
+      letter-spacing: 1px;
+      color: black;
+    }
+
+    a:hover {
+      color: gray;
+      font-weight: $regular;
+    }
+  }
+  &__right {
+    text-align: left;
+    position: relative;
+    left: 2.4rem;
+    a {
+      margin: 1rem;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+  }
+}
+
+.collapsible {
+  text-align: right;
+
+  label {
+    display: block;
+    margin-right: 2rem;
+    position: relative;
+    top: 5px;
+  }
+}
+
+#menu {
+  display: none;
+}
+
+input:checked ~ .navigation__container {
+  max-height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    margin: 0;
+    padding: 0;
+    &__logo {
+      position: absolute;
+      margin-left: 3rem;
+      top: 20px;
+    }
+
+    &__container {
+      max-height: 100%;
+      overflow: visible;
+    }
+
+    &__list {
+      display: inline-flex;
+      position: relative;
+      top: 2px;
+    }
+
+    &__item {
+      a {
+        margin: 1rem;
+        font-weight: $regular;
+        letter-spacing: 1px;
+      }
+
+      a:hover {
+        font-weight: $regular;
+      }
+    }
+    &__right {
+      padding-top: 0.7rem;
+      a {
+        margin: 1rem;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+      a:hover {
+      }
+    }
+  }
+
+  .collapsible {
+    label {
+      display: none;
+    }
+  }
+}
+.fa-2x {
+  font-size: 1.4em;
+}
+.fa-3x {
+  font-size: 2em;
+}
